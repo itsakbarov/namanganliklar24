@@ -1,0 +1,820 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1200px !important;
+    margin: 0 auto;
+}
+.site_header {
+    background: #F6F6F9;
+}
+
+.right_wrapper {
+    width: 70%;
+    align-self: center;
+    display: flex;
+    align-self: center;
+    height: 100%;
+    place-items: center;
+}
+
+.top_bar {
+    height: 124px;
+    width: 63%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.left_wrapper {
+    width: 30%;
+    display: flex;
+    height: 100%;
+}
+
+.left_wrapper a#subscribe_btn {
+    font-family: Rubik;
+    font-style: normal;
+    padding: 8px 15px;
+    font-weight: 500;
+    width: 206px;
+    height: 40px;
+    align-self: center;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 19px;
+    place-items: center;
+    color: #FFFFFF;
+    background: linear-gradient(90deg, #1E96C8 15.07%, #37AEE2 85.96%);
+    border-radius: 5px;
+    position: relative;
+    left: 45%;
+    align-self: center;
+    place-content: center;
+    display: flex;
+}
+
+a#subscribe_btn:hover {
+    background: linear-gradient(90deg, #1c7faa 15.07%, #267ba0 85.96%);
+}
+
+.left_wrapper a#subscribe_btn img {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.middle_bar {
+    width: 63%;
+    margin: 0 auto;
+}
+
+.middle_bar ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.middle_bar ul {
+    display: flex;
+    justify-content: space-around;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 5px rgba(159, 159, 159, 0.19);
+    border-radius: 5px;
+    padding: 15px 0;
+}
+
+.middle_bar ul li {
+    list-style-type: none;
+}
+
+.middle_bar ul li a {
+    text-decoration: none;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 23px;
+    color: #515151;
+}
+
+.sub_nav {
+    margin: 0 auto;
+    width: 85%;
+}
+
+.sub_nav a {
+    display: flex;
+    justify-content: center;
+    padding: 18px;
+}
+
+
+/* covid section */
+
+.covid_stats {
+    width: 63%;
+    background: #F6F6F9;
+    border-radius: 5px;
+    height: 133px;
+    display: flex;
+    margin: 45px auto 0;
+}
+
+.covid_main {
+    height: 100%;
+    display: flex;
+    width: 32%;
+    padding-left: 40px;
+}
+
+.covid_main h2 {
+    width: 100%;
+    border-right: 1px solid red;
+    display: flex;
+    align-self: center;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    text-align: left;
+    padding: 0 40px 0 70px;
+    position: relative;
+}
+
+.covid_main h2::before {
+    content: '';
+    background: url(../icons/virus.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 43px;
+    height: 45px;
+}
+
+.infected {
+    border-right: 1px solid red;
+    display: inline-table;
+    align-self: center;
+    padding: 0px 55px 0 95px;
+    position: relative;
+}
+
+.infected h2::before {
+    content: '';
+    background: url(../icons/emojione-monotone_face-with-medical-mask.svg);
+    width: 35px;
+    height: 37px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 30px;
+}
+
+.infected h2 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #DB0000
+}
+
+.infected span {
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+.treated {
+    border-right: 1px solid red;
+    display: inline-table;
+    align-self: center;
+    position: relative;
+    padding: 0px 55px 0 95px;
+}
+
+.treated h2 {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #05B135;
+}
+
+.treated h2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    background-image: url(../icons/cil_smile.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 30px;
+    width: 35.63px;
+    height: 37.5px;
+}
+
+.treated span {
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.death {
+    display: inline-table;
+    align-self: center;
+    padding: 0px 55px 0 95px;
+    position: relative;
+}
+
+.death h2 {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.death h2::before {
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: 0;
+    background-image: url(../icons/Vector.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 38px;
+    height: 38px;
+}
+
+.death span {
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.currency {
+    margin-left: 25px;
+    display: flex;
+}
+
+.currency p {
+    margin: 10px;
+    position: relative;
+}
+
+.currency span {
+    color: #295091;
+    font-weight: 900;
+}
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 63%;
+    height: 50px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    /* padding: 20px; */
+    /* margin-left: 20px; */
+    text-align: center;
+    width: 386px;
+}
+
+.grid-item img {
+    width: 386px;
+    height: 190px;
+    margin-top: 20px;
+}
+
+.grid-item h3 {
+    text-align: left;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    color: #202020;
+    margin-top: 11px;
+}
+
+.grid-item span {
+    font-family: Rubik;
+    margin-top: 11px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6B6D97;
+    float: left;
+}
+
+.notification {
+    background: rgba(239, 186, 84, 0.18);
+    height: 91 px;
+    border-radius: 5px;
+    width: 66%;
+    margin: 20px auto;
+    display: flex;
+    padding: 15px;
+    align-self: center;
+}
+
+.notification_btn {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    background: linear-gradient(90deg, #FE5C28 0%, rgba(255, 139, 54, 0.9) 88.43%);
+    border-radius: 5px;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 15px;
+    float: right;
+    position: relative;
+    left: 19%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.notification h2 {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.notification * {
+    align-self: center;
+}
+
+.notification img {
+    margin: 20px 34px;
+}
+
+.latest_new {
+    width: 66%;
+    margin: 0 auto;
+    display: flex;
+    height: 1111px
+}
+
+.news_heading {
+    margin: 0 auto;
+    width: 66%;
+}
+
+.news_heading h2 {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 4;
+    color: #000000;
+}
+
+.latest_new .main_news {
+    width: 90%;
+    /* background: red; */
+    height: 800px;
+}
+
+.left_news {
+    width: 40%;
+}
+
+.pre_news {
+    width: 386px;
+    background: #F6F6F9;
+    border-radius: 5px;
+}
+
+.pre_ad {
+    height: 400px;
+    width: 100%;
+}
+
+.usell_ad img {
+    margin-top: 20px;
+}
+
+.news_item {
+    display: flex;
+    margin: 20px 0;
+}
+
+.infomation_part a h2 {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    color: #202020;
+    margin-top: 10px;
+    width: 80%;
+}
+
+.infomation_part {
+    margin-left: 19px;
+}
+
+.infomation_part p {
+    margin-top: 10px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    color: #434343;
+    margin-bottom: 8px;
+}
+
+.infomation_part span {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    padding-left: 20px;
+    line-height: 17px;
+    color: #7688A4;
+    margin-top: 8px;
+    position: relative;
+}
+
+.infomation_part span::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -1px;
+    background-image: url(../icons/calendar.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 14px;
+    height: 16.67px;
+}
+
+.hottest_news {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 20px 6px 0 20px;
+    color: #202020;
+}
+
+.hot_news_item h3 {
+    font-family: Rubik;
+    font-style: normal;
+    padding: 20px 6px 0 20px;
+    font-weight: normal;
+    font-size: 17px;
+    width: 347px;
+    line-height: 20px;
+    color: #202020;
+}
+
+.hot_news_link {
+    color: #202020;
+}
+
+.hot_news_item .hot_news_date {
+    padding: 20px 6px 11px 20px;
+    margin-top: 11px;
+    line-height: 3;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #7688A4;
+}
+
+.hot_news_item {
+    border-bottom: 2px solid rgba(155, 155, 155, 0.349);
+    padding-bottom: 7px;
+}
+
+.hot_news_item:last-child {
+    border-bottom: none;
+}
+
+
+
+.hot_news_item:last-child {
+    border-bottom: none;
+}
+
+.infomation_part {
+    width: 70%;
+}
+
+.load_mode {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    color: #FFFFFF;
+    background: #295093;
+    border-radius: 5px;
+    padding: 10px 30px;
+}
+
+.load_btn {
+    display: flex;
+    place-content: center;
+    margin: 25px 0;
+}
+
+.ucell_adver {
+    width: 68%;
+    margin: 0 auto;
+    background: #F6F6F9;
+    border-radius: 5px;
+    padding-left: 50px;
+    display: flex;
+    height: 214px;
+    overflow: hidden;
+}
+
+.ucell_txt h2 {
+    width: 526px;
+    height: 30px;
+    font-family: Rubik;
+    font-style: n ormal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #295093;
+}
+
+.ucell_txt {
+    margin-top: 64px;
+}
+
+.ucell_txt p {
+    width: 515px;
+    height: 44px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+    margin-top: 10px;
+}
+
+.ucell_adver img.image {
+    margin-top: 37px;
+}
+
+.apps * {
+    margin: 100px 0 0 10px;
+}
+
+.apps .play_store {
+    margin: 0 20px;
+}
+
+
+/* footer */
+
+footer {
+    background: #295093;
+    width: 100%;
+    margin-top: 38px;
+}
+
+.foot_container {
+    width: 68%;
+    margin: 0 auto;
+}
+
+.footer_top {
+    display: flex;
+    height: 70px;
+    border-bottom: 3px solid #133C82;
+}
+
+.footer_logo .footer_logo_link {
+    background: #133C82;
+    border-radius: 5px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    padding: 10px;
+}
+
+.footer_logo {
+    align-self: center;
+    width: 40%;
+}
+
+.footer_link h3 {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    align-self: center;
+    width: 80%;
+    margin-right: 10px;
+}
+
+.footer_link a {
+    align-self: center;
+    align-self: center;
+    background: #FFFFFF;
+    color: rgb(34, 70, 231);
+    border-radius: 5px;
+    padding: 12px 20px;
+    place-items: center;
+    display: flex;
+}
+
+.footer_link img {
+    margin-right: 10px;
+}
+
+.footer_link {
+    display: flex;
+    width: 80%;
+}
+
+.right_foot {
+    width: 30%;
+}
+
+.left_foot {
+    display: flex;
+    width: 80%;
+}
+
+.right_foot p {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.right_foot h3 {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    line-height: 3;
+}
+
+.footer_main {
+    display: flex;
+}
+
+.left_foot ul li {
+    list-style: none;
+}
+
+.left_foot ul li a {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+.left_foot ul {
+    width: 35%;
+    margin: 4% 0 0 10%;
+}
+
+
+/* modal form */
+
+.telegram_modal {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 819px;
+    height: 231px;
+    z-index: 99;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 30px rgba(86, 86, 86, 0.25);
+    border-radius: 5px;
+}
+
+.telegram_modal a img {
+    margin-right: 15px;
+    width: 28.03px;
+    height: 28.03px;
+}
+
+.telegram_modal a {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    width: 223px;
+    height: 40px;
+    align-self: center;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 19px;
+    place-items: center;
+    color: #FFFFFF;
+    background: linear-gradient(90deg, #1E96C8 15.07%, #37AEE2 85.96%);
+    border-radius: 5px;
+    display: flex;
+    place-content: center;
+    position: relative;
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%, -15%);
+}
+
+.telegram_modal h2 {
+    display: block;
+    text-align: center;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 31px;
+    color: #295093;
+    padding-top: 50px;
+}
+
+.telegram_modal span {
+    color: #BABFC2;
+    float: right;
+    padding: 15px;
+    font-weight: 900;
+    cursor: pointer;
+    font-size: 26px;
+}
+
+.telegram_modal span:hover {
+    color: #ce2a24;
+}
+
+.telegram_modal {
+    display: none;
+}
+
+
+/* POLITICS LEFT SIDE */
+
+.politics {
+    width: 62%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.politics .left {
+    width: 70%;
+}
+
+.politics .right {
+    width: 30%;
+    background: #F6F6F9;
+    border-radius: 5px;
+}
+
+.politics .right .hot_news_item h3 {
+    font-size: 17px;
+    width: 277px;
+}
+
+.politics .right .ucell_ad img {
+    width: 354px;
+    height: 477px;
+}
+
+.politics .left .news_item p {
+    width: 450px;
+}

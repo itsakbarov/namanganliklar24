@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/app.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="site_header">
+        <div class="top_bar container">
+            <div class="right_wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="./images/logo.svg" alt="Namanganliklar24.uz">
+                    </a>
+                </div>
+                <div class="currency">
+                    <p id="dollar"> <span> $ </span> 10137.2 </p>
+                    <p id="ruble"><span>€</span> 138.26</p>
+                    <p id="euro"><span>¥</span> 10988.72</p>
+                </div>
+            </div>
+            <div class="left_wrapper">
+                <a id="subscribe_btn" href="#">
+                    <img src="./icons/telegram_white.svg" alt=""> Подписатся</a>
+                <div id="modal" class="telegram_modal">
+                    <span class="close-btn">&times;</span>
+                    <h2>Подписывайтесь на наш канал в Telegram <br> и будьте всегда в курсе самых последних новостей:</h2>
+                    <a href="https://t.me/asror_akbarov" class="icon">
+                        <img src="./icons/telegram_white.svg" alt=""> Подписатся
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="middle_bar container">
+            <ul>
+                <li>
+                    <a href="#">Узбекистана</a>
+                </li>
+                <li>
+                    <a href="#">Мир</a>
+                </li>
+                <li>
+                    <a href="#">Экономика</a>
+                </li>
+                <li>
+                    <a href="politics.html">Политика</a>
+                </li>
+                <li>
+                    <a href="#">Общество</a>
+                </li>
+                <li>
+                    <a href="#">Технологии</a>
+                </li>
+                <li>
+                    <a href="#">Спорт</a>
+                </li>
+                <li>
+                    <a href="#">Культура</a>
+                </li>
+                <li>
+                    <a href="#">Происшествия</a>
+                </li>
+                <li>
+                    <a href="#">Туризм</a>
+                </li>
+            </ul>
+        </div>
+        <div class="sub_nav container">
+            <a href="#">
+                <img src="./images/nrg-banner.jpg" alt="">
+            </a>
+        </div>
+    </header>
+    <section class="covid_stats   container">
+        <div class="covid_main ">
+            <h2>
+                Коронавирус COVID-19 в Узбекистане
+            </h2>
+        </div>
+        <div class="infected">
+            <h2>
+                Инфицированы
+            </h2>
+            <span id="inflected"> 2753
+                </span>
+        </div>
+        <div class="treated">
+            <h2>Выздоровели
+            </h2>
+            <span id="treated">
+                2245
+            </span>
+        </div>
+        <div class="death">
+            <h2>Умерли </h2>
+            <span>
+                12
+            </span>
+        </div>
+    </section>
+    <!-- <div class="random_news"> -->
+    <div class="grid-container  container">
+        <div class="grid-item">
+            <img src="./images/prezident@2x.jpg" alt="">
+            <a href="article.html">
+                <h3>Мирзиёев рассказал, зачем было построено Сардобинское водохранилище</h3>
+            </a>
+            <span>05:28 / 16.05.2020</span>
+        </div>
+        <div class="grid-item">
+            <img src="./images/karantin.jpg" alt="">
+            <a href="#">
+                <h3>Карантин в Узбекистане продлен до 1 июня</h3>
+            </a>
+            <span>05:28 / 16.05.2020</span>
+        </div>
+        <div class="grid-item">
+            <img src="./images/sardoba.jpg" alt="">
+            <a href="#">
+                <h3>Обмелевшая Сардоба: стихия или человеческий фактор?</h3>
+            </a>
+            <span>05:28 / 16.05.2020</span>
+        </div>
+        <div class="grid-item">
+            <img src="./images/prokuror.jpg" alt="">
+            <a href="#">
+                <h3>Следствие проверяет четыре версии прорыва Сардобинской плотины</h3>
+            </a>
+
+            <span>05:28 / 16.05.2020</span>
+        </div>
+        <div class="grid-item">
+            <img src="./images/tez-yordam.jpg" alt="">
+            <a href="#">
+                <h3>Выявлено еще 7 случаев коронавируса</h3>
+            </a>
+
+            <span>05:28 / 16.05.2020</span>
+        </div>
+        <div class="grid-item">
+            <img src="./images/stop-karantin.jpg" alt="">
+            <a href="#">
+                <h3>Итоги второго месяца карантина</h3>
+            </a>
+
+            <span>05:28 / 16.05.2020</span>
+        </div>
+    </div>
+    <!-- </div> -->
+    <!-- notification -->
+    <div class="notification  container">
+        <img src="./icons/bell-icon@2x.svg" alt="">
+        <h2>
+            Хотите узнать новости первыми? подключите уведомления!
+        </h2>
+        <a href="#" class="notification_btn">
+            Включит  уведомления!
+        </a>
+    </div>
+    <!-- </div> -->
+    <div class="news_heading  container">
+        <h2>Последние новости</h2>
+    </div>
+    <section class="latest_new  container">
+        <div class="main_news">
+            <div class="news_item">
+                <div class="img">
+                    <img src="./images/sardoba_min.jpg" alt="">
+                </div>
+                <div class="infomation_part">
+                    <a href="#">
+                        <h2>По факту прорыва Сардобинского водохранилища возбуждено уголовное дело</h2>
+                    </a>
+                    <p>
+                        После прорыва дамбы Сардобинского водохранилища возбуждено уголовное дело, сообщили в пресс-службе Генпрокуратуры Узбекистана.
+                    </p>
+                    <span id="date">11:31 / 15.05.2020</span>
+                </div>
+            </div>
+            <div class="news_item">
+                <div class="img">
+                    <img src="./images/president.jpg" alt="">
+                </div>
+                <div class="infomation_part">
+                    <a href="#">
+                        <h2>Мирзиёев: «Нам следовало бы принять некоторые правила карантина как часть повседневной жизни»
+                        </h2>
+                    </a>
+                    <p>
+                        Президент Узбекистана заявил, что после того, как угроза коронавируса исчезнет, в стране следовало бы принять некоторые правила периода карантина как часть своей повседневной жизни.
+                    </p>
+                    <span id="date">11:31 / 15.05.2020</span>
+                </div>
+            </div>
+            <div class="news_item">
+                <div class="img">
+                    <img src="./images/bus.jpg" alt=""><span> $ </span> 10137.2
+                </div>
+                <div class="infomation_part">
+                    <a href="#">
+                        <h2>В Ташкенте планируют ввести новую систему электронных проездных билетов </h2>
+                    </a>
+                    <p>
+                        После прорыва дамбы Сардобинского водохранилища возбуждено уголовное дело, сообщили в пресс-службе Генпрокуратуры Узбекистана.
+                    </p>
+                    <span id="date">11:31 / 15.05.2020</span>
+                </div>
+            </div>
+            <div class="news_item">
+                <div class="img">
+                    <img src="./images/sardoba_min.jpg" alt="">
+                </div>
+                <div class="infomation_part">
+                    <a href="#">
+                        <h2>По факту прорыва Сардобинского водохранилища возбуждено уголовное дело</h2>
+                    </a>
+                    <p>
+                        После прорыва дамбы Сардобинского водохранилища возбуждено уголовное дело, сообщили в пресс-службе Генпрокуратуры Узбекистана.
+                    </p>
+                    <span id="date">11:31 / 15.05.2020</span>
+                </div>
+            </div>
+            <div class="news_item">
+                <div class="img">
+                    <img src="./images/president.jpg" alt="">
+                </div>
+                <div class="infomation_part">
+                    <a href="#">
+                        <h2>Мирзиёев: «Нам следовало бы принять некоторые правила карантина как часть повседневной жизни»
+                        </h2>
+                    </a>
+                    <p>
+                        Президент Узбекистана заявил, что после того, как угроза коронавируса исчезнет, в стране следовало бы принять некоторые правила периода карантина как часть своей повседневной жизни.
+                    </p>
+                    <span id="date">11:31 / 15.05.2020</span>
+                </div>
+            </div>
+            <div class="news_item">
+                <div class="img">
+                    <img src="./images/bus.jpg" alt="">
+                </div>
+                <div class="infomation_part">
+                    <a href="#">
+                        <h2>В Ташкенте планируют ввести новую систему электронных проездных билетов </h2>
+                    </a>
+                    <p>
+                        После прорыва дамбы Сардобинского водохранилища возбуждено уголовное дело, сообщили в пресс-службе Генпрокуратуры Узбекистана.
+                    </p>
+                    <span id="date">11:31 / 15.05.2020</span>
+                </div>
+            </div>
+            <div class="load_btn">
+                <a href="#" class="load_mode">
+                    Больше новостей
+                </a>
+            </div>
+        </div>
+        <div class="left_news">
+            <aside class="pre_news">
+                <h2 class="hottest_news">
+                    Cамые популярные новости
+                </h2>
+                <div class="hot_news_item">
+                    <h3>
+                        <a href="#" class="hot_news_link"> По факту прорыва Сардобинского водохранилища возбуждено уголовное дело</a>
+                    </h3>
+                    <span class="hot_news_date">
+                        11:31 / 15.05.2020
+                    </span>
+                </div>
+
+                <div class="hot_news_item">
+                    <h3>
+                        <a href="#" class="hot_news_link"> По факту прорыва Сардобинского водохранилища возбуждено уголовное дело</a>
+                    </h3>
+                    <span class="hot_news_date">
+                        11:31 / 15.05.2020
+                    </span>
+                </div>
+
+                <div class="hot_news_item">
+                    <h3>
+                        <a href="#" class="hot_news_link"> По факту прорыва Сардобинского водохранилища возбуждено уголовное дело</a>
+                    </h3>
+                    <span class="hot_news_date">
+                        11:31 / 15.05.2020
+                    </span>
+                </div>
+
+                <div class="hot_news_item">
+                    <h3>
+                        <a href="#" class="hot_news_link"> По факту прорыва Сардобинского водохранилища возбуждено уголовное дело</a>
+                    </h3>
+                    <span class="hot_news_date">
+                        11:31 / 15.05.2020
+                    </span>
+                </div>
+            </aside>
+            <div class="pre_ad">
+                <a href="#" class="usell_ad">
+                    <img src="./images/usell.jpg" alt="">
+                </a>
+            </div>
+
+        </div>
+    </section>
+    <div class="ucell_adver  container">
+        <img class="image" src="./images/phone.png" alt="">
+        <div class="ucell_txt">
+            <h2>
+                Всегда будьте в курсе последних новостей!
+            </h2>
+            <p>
+                Установите мобильное приложение NAMANGANLIKLAR24 и все новости в вашем кармане!
+            </p>
+        </div>
+        <div class="apps">
+            <a href="" class="play_store">
+                <img src="./images/google-play.svg" alt="">
+            </a>
+            <a href="" class="app_store">
+                <img src="./images/appStore.svg" alt="">
+            </a>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer>
+        <div class="foot_container  container">
+            <div class="footer_top">
+                <div class="footer_logo">
+                    <a href="#" class="footer_logo_link">
+                        NAMANGANLIKLAR24
+                    </a>
+                </div>
+                <div class="footer_link">
+                    <h3>
+                        Подписывайтесь на наш канал в Telegram и будьте всегда в курсе самых последних новостей:
+                    </h3>
+                    <a href="https://t.me/asror_akbarov" class="icon">
+                        <img src="./icons/teelgram.svg" alt=""> Подписатся
+                    </a>
+                </div>
+            </div>
+            <div class="footer_main">
+                <div class="right_foot">
+                    <h3>
+                        О сайте
+                    </h3>
+                    <p class="footer_txt">
+                        Воспроизводство, копирование, тиражирование, распростране ние и иное использование информации с сайта «NAMANGANLIKLAR24.UZ» возможно только с предварительного письменного разрешения редакции.
+                    </p>
+                </div>
+                <div class="left_foot">
+                    <ul>
+
+                        <li>
+                            <a href="">Информация о сайте </a>
+                        </li>
+                        <li>
+                            <a href="contact.html">   Напишите нам</a>
+                        </li>
+                        <li>
+                            <a href="">Реклама</a>
+                        </li>
+                        <li>
+                            <a href="">  Прислать новость</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="">Использование материалов </a>
+                        </li>
+                        <li>
+                            <a href="">Темы дня</a>
+                        </li>
+                        <li>
+                            <a href="">Наша команда</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+<script src="./js/main.js"></script>
+
+
+</html>

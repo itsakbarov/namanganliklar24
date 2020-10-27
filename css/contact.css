@@ -1,0 +1,156 @@
+.user_view {
+    width: 60%;
+    margin: 0 auto;
+    height: 10px;
+    display: flex;
+    height: 75vh;
+}
+
+.right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.left {
+    width: 50%;
+    border-radius: 5px;
+}
+
+.left .card {
+    height: 280px;
+    background: #FFFFFF;
+    border: 2px solid #BCC3CD;
+    box-sizing: border-box;
+    width: 80%;
+    position: relative;
+    left: 90px;
+    top: 58px;
+    box-shadow: 0px 8px 9px rgba(57, 57, 57, 0.25);
+    border-radius: 5px;
+}
+
+.right input {
+    border-radius: 5px;
+    background: #F1F1F1;
+    opacity: 0.8;
+    border: 2px solid #2851935d;
+    box-sizing: border-box;
+    margin-top: 20px;
+    height: 50px;
+    width: 90%;
+    padding: 10px;
+}
+
+textarea {
+    border-radius: 5px;
+    background: #F1F1F1;
+    opacity: 0.8;
+    border: 2px solid #28519349;
+    box-sizing: border-box;
+    margin-top: 20px;
+    width: 90%;
+    padding: 10px;
+}
+
+input#codeara,
+input#drag {
+    width: 35%;
+}
+
+#submit {
+    width: 35%;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    background: #295093;
+    border: 2px solid rgba(40, 81, 147, 0.54);
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.card_details {
+    margin-top: 65px;
+    display: flex;
+}
+
+.card ul {
+    width: 60%;
+}
+
+.card h2 {
+    margin-top: 23px;
+    float: right;
+    margin-right: 10px;
+font-family: Rubik;
+font-style: normal;
+font-weight: bold;
+font-size: 28px;
+line-height: 33px;
+color: #295091;
+}
+
+.card ul:first-child li {
+    list-style-type: none;
+    line-height: 3;
+    padding-left: 25px;
+}
+
+.card ul:last-child li {
+    list-style-type: none;
+    line-height: 2;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card .second_child li:nth-child(1) {
+    /* padding-left: 25px;  */
+    line-height: 3;
+}
+
+.card .second_child li:nth-child(2) {
+    line-height: 2;
+    padding-left: 95px;
+    width: 90%;
+    display: flex;
+}
+
+.card .second_child li:nth-child(2) a {
+    margin-left: 15px;
+}
+
+.modal_icon a {
+    background: #295091;
+    border-radius: 5px;
+    padding: 7px 20px;
+    color: #FFFFFF;
+    place-content: center;
+    align-self: center;
+    display: flex;
+    margin-left: 60px;
+}
+
+.modal_icon img {
+    margin-right: 8px;
+}
+
+.apps_modal {
+    margin-top: 10px;
+}
+
+.apps_modal a {
+    margin: 5px;
+}
+
+.mailto {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 2;
+    color: #888888;
+}
